@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- LEFT SIDE -->
+    <div class="profile">
+        <h2>👤 {{ user.name }}</h2>
+        <p>Student</p>
+        <a href="/out" class="logout">Logout</a>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="details">
+        <h3>📄 Profile Details</h3>
+
+        <div class="info"><b>Email:</b> {{ user.email }}</div>
+        <div class="info"><b>University:</b> {{ user.university }}</div>
+        <div class="info"><b>Class:</b> {{ user.class }}</div>
+        <div class="info"><b>Age:</b> {{ user.age }}</div>
+        <div class="info"><b>Mobile:</b> {{ user.mobile }}</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

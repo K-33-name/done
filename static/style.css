@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff4ecd, #6a5cff, #00d4ff, #00ff9d);
+    background-size: 400% 400%;
+    animation: move 10s infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@keyframes move {
+    0% {background-position:0%}
+    50% {background-position:100%}
+    100% {background-position:0%}
+}
+
+/* BOX */
+.box {
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 20px;
+    width: 340px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.box h1, .box h2 {
+    margin-bottom: 10px;
+}
+
+.box p {
+    margin-bottom: 15px;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #ff512f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* LINKS */
+a {
+    color: yellow;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.btn {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* ERROR */
+.error {
+    color: #ffb3b3;
+    margin-bottom: 10px;
+}
+
+/* DASHBOARD */
+.dashboard {
+    display: flex;
+    gap: 20px;
+    width: 700px;
+}
+
+/* LEFT */
+.profile {
+    flex: 1;
+    background: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.logout {
+    margin-top: 20px;
+    background: red;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* RIGHT */
+.details {
+    flex: 2;
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.details h3 {
+    margin-bottom: 15px;
+}
+
+/* INFO ROW */
+.info {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
